@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - Aureo 880 Unidad 1C</title>
+    <style>
+        :root {
+            --azul-oscuro: #0a192f;
+            --azul-card: #112240;
+            --dorado: #B8963E;
+            --blanco: #e6f1ff;
+            --gris: #8892b0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 0; border-bottom: 1px solid rgba(184,150,62,0.3); }
+        .logo { color: var(--dorado); font-size: 2.5rem; letter-spacing: 5px; font-weight: 300; }
+        .subtitle { color: var(--gris); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; }
+
+        .main-info { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .price-card {
+            background: var(--azul-card);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 5px solid var(--dorado);
+        }
+        .price { font-size: 2.5rem; color: var(--dorado); font-weight: bold; }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .spec-item {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(136,146,176,0.1);
+        }
+        .spec-label { color: var(--gris); font-size: 0.8rem; text-transform: uppercase; }
+        .spec-value { font-size: 1.1rem; color: var(--blanco); }
+
+        .gallery { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid var(--dorado);
+            transition: 0.3s;
+        }
+        .gallery img:hover { transform: scale(1.03); }
+
+        .amenities { margin-top: 40px; background: var(--azul-card); padding: 30px; border-radius: 10px; }
+        .amenities h3 { color: var(--dorado); margin-bottom: 15px; }
+        .amenities ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .amenities li::before { content: "•"; color: var(--dorado); margin-right: 10px; }
+
+        .contact-section {
+            margin-top: 50px;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--azul-card) 0%, var(--azul-oscuro) 100%);
+            border-radius: 15px;
+            border: 1px solid var(--dorado);
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-whatsapp:hover { background-color: #128c7e; transform: translateY(-3px); }
+
+        footer { text-align: center; padding: 40px; color: var(--gris); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="subtitle">Aureo 880 - San Fernando</div>
+        <h1 class="logo">UNIDAD 1C</h1>
+    </header>
+
+    <div class="main-info">
+        <div class="price-card">
+            <div class="spec-label">Valor de Venta</div>
+            <div class="price">USD 115.000</div>
+            <div class="spec-label" style="margin-top:10px">Cochera Cubierta Incluida</div>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-label">Ambientes</div>
+                <div class="spec-value">2 Ambientes</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Estado</div>
+                <div class="spec-value">Apto Crédito</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Expensas</div>
+                <div class="spec-value">$100.000</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Antigüedad</div>
+                <div class="spec-value">2 Años</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="specs-grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top:10px;">
+        <div class="spec-item">
+            <div class="spec-label">Cubiertos</div>
+            <div class="spec-value">54 m²</div>
+        </div>
+        <div class="spec-item">
+            <div class="spec-label">Semicubiertos</div>
+            <div class="spec-value">6 m²</div>
+        </div>
+        <div class="spec-item">
+            <div class="spec-label">Total</div>
+            <div class="spec-value">60 m²</div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <!-- Nombres de archivo ajustados EXACTAMENTE según tu última captura de pantalla -->
+        <img src="PHOTO-2025-12-03-15-28-17.jpg" alt="Interior 1">
+        <img src="PHOTO-2025-12-03-15-28-18.jpg" alt="Interior 2">
+        <img src="PHOTO-2025-12-03-15-28-26%202.jpg" alt="Interior 3">
+        <img src="PHOTO-2025-12-03-15-28-26%204.jpg" alt="Interior 4">
+        <img src="PHOTO-2025-12-03-15-28-26%205.jpg" alt="Interior 5">
+        <img src="PHOTO-2025-12-03-15-28-26%206.jpg" alt="Interior 6">
+        <img src="PHOTO-2025-12-03-15-28-26%207.jpg" alt="Interior 7">
+        <img src="PHOTO-2025-12-03-15-28-26%208.jpg" alt="Interior 8">
+        <img src="PHOTO-2025-12-03-15-28-26%209.jpg" alt="Interior 9">
+    </div>
+
+    <div class="amenities">
+        <h3>Características y Terminaciones</h3>
+        <ul>
+            <li>Aberturas de aluminio anodizado</li>
+            <li>Pisos de porcellanato pulido</li>
+            <li>Calefacción por tiro balanceado</li>
+            <li>Pre-instalación para Split</li>
+            <li>Baños con artefactos Roca</li>
+            <li>Mobiliario de cocina premium</li>
+            <li>SUM con parrilla</li>
+            <li>Cocheras con portón automático</li>
+        </ul>
+    </div>
+
+    <div class="contact-section">
+        <h2 style="color: var(--dorado)">¿Te interesa visitar esta unidad?</h2>
+        <p style="margin-top: 10px">Contactate directamente con Enmanuel para coordinar una visita o recibir más información.</p>
+        <a href="https://wa.me/541173697105?text=Hola%20Enmanuel,%20me%20interesa%20la%20unidad%201C%20de%20Aureo%20880" class="btn-whatsapp">
+            Contactar por WhatsApp
+        </a>
+        <div style="margin-top: 15px; color: var(--gris)">11 7369-7105</div>
+    </div>
+
+    <footer>
+        9 de Julio 880, San Fernando, Buenos Aires.<br>
+        Aureo Desarrollos — Todos los derechos reservados.
+    </footer>
+</div>
+
+</body>
+</html>
